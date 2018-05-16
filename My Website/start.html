@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sourav Bastia</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewpoet" content="wifth=device-width, initital-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<marquee scrollamount="13" bgcolor="silver"><font size="20"> <h1 class="w3-jumbo">WELCOME TO MY HOMEPAGE.</h1></font></marquee>
+
+
+<!-- Navigation -->
+<div class=" w3-block ">
+<nav class="w3-sidebar">
+<a href="home" class="w3-button w3-navbar-item" ><i class="fa fa-home fa-2x"></i><font size="5">HOME</font></a>
+<a href="intro" class="w3-button w3-navbar-item" ><i class="fa fa-user fa-2x"></i><font size="5">INTRO</font></a>
+<a href="contact" class="w3-button w3-navbar-item" ><i class="fa fa-envelope fa-2x"></i><font size="5"> CONTACT</font></a>
+</nav></center>
+<hr>
+<style>
+
+.marq
+{
+font-family:verdana;
+}
+.copyright
+{
+font-family:Harlow Solid;
+color:violet;
+font-size:30px;
+}
+
+.sty{
+font-family:Montserrat;
+color:silver;
+font-size:70px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: black;
+}
+
+.fa-instagram {
+  background: #125688;
+  color:white;
+}
+
+
+</style>
+
+<center><h1 class="sty">SOURAV BASTIA</h1></center>
+ <right><h2 class="w3-medium"><span class="w3-opacity"> - Simple Website Designer</h2></right>
+<center><hr style="width:400px" class="w3-opacity"></center>
+
+<!-- SlideShow -->
+<center><section>
+<img class="mySlides" src=" 1.jpg " style="width:50%"><br>
+<img class="mySlides" src=" 2.jpg  " style="width:50%"><br>
+<img class="mySlides" src=" 3.jpg  " style="width:50%"><br>
+</section></center>
+</body>
+
+<!-- CONTACT ME PART -->
+<section>
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+<div class="container">
+<div style="text-align:center">
+<h2>Contact Me</h2>
+<p><b>Hang by for a cup of coffee, or leave a message..</b></p>
+</div></div>
+<div class="row">
+<div class="column">
+</div>
+<div class="column">
+<form action="/action_page.php">
+<center><label for="fname">First Name :</label></center><br/>
+<center><input type="text" id="fname" name="firstname" placeholder="Your First name.."><br/></center>
+<center><label for="mname">Middle Name :</label></center><br/>
+<center><input type="text" id="mname" name="middlename" placeholder="Your Middle Name"></center><br/>
+<center><label for="lname">Last Name :</label></center><br/>
+<center><input type="text" id="lname" name="lastname" placeholder="Your Last Name"><center><br/>
+<center><label for="country">Which Country Are U From ? :</label></center><br/>
+<center><input type="text" id="country" name="country" placeholder="Give your country name"></center><br/>
+<center><label for="subject">Writing space</label></center><br/>
+<center><textarea id="subject" name="subject" placeholder="Write something.." style="height:180px"></textarea></center><br/>
+<center><input type="submit" value="Submit"></center><br/>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- JS Script for Slideshow of images -->
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+<!-- Footer -->
+<!-- ICONS -->
+<footer class="w3-container w3-padding-64 w3-center w3-large">
+	<footer>
+                <a href="https://www.facebook.com/sourav.bastia.9" class="fa fa-facebook-square fa-3x"></a>
+                <a href="https://twitter.com/sourav__1998"  class="fa fa-twitter fa-3x"></a>
+             <a href="https://www.linkedin.com/in/sourav-bastia-322947119/" class="fa fa-linkedin fa-3x"></a>
+             <a href="https://www.instagram.com/__sourav__bastia98__/" class="fa fa-instagram fa-3x"></a>
+            
+
+  <!-- COPYRIGHT Writng -->    	
+           <p class="copyright">&copy; Sourav Bastia. 2018. Design: <a href="http://i.imgur.com/6Ne6XQI.jpg">HTML5 UP</a>.</p>
+        </footer>
+</div>
+</body>
+</html>
